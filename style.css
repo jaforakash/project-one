@@ -1,0 +1,100 @@
+/*==================================
+Common CSS
+===================================*/
+body {
+  color: #666666;
+  font-family: Georgia;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 96%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================================
+Top Header CSS
+===================================*/
+#top_header_area {
+  background: #ba2e1f;
+  padding: 15px 0;
+  width: 100%;
+}
+.inner_top_header {
+  overflow: hidden;
+}
+.mini_menu {
+  padding-top: 5px;
+  float: left;
+  width: 70%;
+}
+.mini_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+.mini_menu ul li {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+}
+.mini_menu ul li::after {
+  background: #fff;
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -10px;
+  height: 12px;
+  width: 1px;
+}
+.mini_menu ul li:last-child::after {
+  display: none;
+}
+.mini_menu ul li a {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+}
+.mini_menu ul li a:hover {
+  color: #ddd;
+}
+.search_area {
+  float: right;
+  width: 30%;
+}
+.search_area form {
+  background: #fff;
+  border-radius: 25px;
+  float: right;
+  padding: 2%;
+  min-width: 210px;
+  width: 96%;
+}
+.search_area input {
+  border: 0px solid;
+  width: 75%;
+  padding: 1%;
+  float: left;
+  color: #000;
+}
+.search_area input {
+  border: 0px solid;
+  width: 75%;
+  padding: 1%;
+  float: left;
+  color: #000;
+}
+.search_area input[type="submit"] {
+  background: url(img/search.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 23%;
+}
