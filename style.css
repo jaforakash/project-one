@@ -98,3 +98,52 @@ Top Header CSS
   background-position: right;
   width: 23%;
 }
+
+/*==================================
+Main Header CSS
+===================================*/
+#main_header_area {
+  width: 100%;
+  clear: both;
+}
+.inner_header {
+  padding: 40px 0;
+  overflow: hidden;
+}
+.logo_area {
+  float: left;
+  width: 240px;
+}
+.social_area {
+  float: right;
+  max-width: 600px;
+  width: 100%;
+}
+.social_area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+.social_area ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.social_area ul li a {
+  display: block;
+  text-decoration: none;
+}
+.social_area ul li a i {
+  background: #333333;
+  border-radius: 50%;
+  display: block;
+  text-decoration: none;
+  width: 35px;
+  padding-top: 8px;
+  color: #fff;
+  height: 25px;
+  text-align: center;
+}
+.social_area ul li a:hover i {
+  background: #ba2e1f;
+}
