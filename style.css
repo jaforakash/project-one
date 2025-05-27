@@ -97,6 +97,7 @@ Top Header CSS
   background-repeat: no-repeat;
   background-position: right;
   width: 23%;
+  cursor: pointer;
 }
 
 /*==================================
@@ -115,6 +116,7 @@ Main Header CSS
   width: 240px;
 }
 .social_area {
+  padding-top: 15px;
   float: right;
   max-width: 600px;
   width: 100%;
@@ -146,4 +148,102 @@ Main Header CSS
 }
 .social_area ul li a:hover i {
   background: #ba2e1f;
+}
+
+/*==================================
+Main Menu CSS
+===================================*/
+#main_menu {
+  width: 100%;
+  clear: both;
+}
+.inner_menu {
+  background: #333333;
+  position: relative;
+  min-height: 30px;
+  padding: 15px 0;
+  border-radius: 5px;
+  z-index: 1;
+}
+.inner_menu ::after {
+  background: #2b2b2b;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
+}
+#main_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+#main_menu ul li {
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+}
+#main_menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+}
+#main_menu ul li a:hover {
+  color: #ba2e1f;
+}
+#main_menu ul li:hover a {
+  color: #ba2e1f;
+}
+#main_menu ul li:hover ul li a {
+  color: #fff;
+}
+
+/*Dropdown Style*/
+#main_menu ul ul {
+  position: absolute;
+  background: #a07474;
+  width: 180px;
+  left: -99999999px;
+  top: 33px;
+}
+#main_menu ul li:hover ul {
+  left: 0;
+}
+#main_menu ul li:hover ul ul {
+  left: -9999999px;
+}
+#main_menu ul ul ul {
+  left: -9999999px;
+  top: 0px;
+}
+#main_menu ul li ul li:hover ul {
+  left: 180px;
+}
+#main_menu ul ul li {
+  margin: 0;
+  display: block;
+}
+#main_menu ul ul li a:hover {
+  background: #333333;
+  color: #fff;
+}
+#main_menu ul ul li a:hover {
+  background: #333333;
+  color: #fff;
+}
+#main_menu ul ul li:hover a {
+  background: #333333;
+  color: #fff;
+}
+#main_menu ul ul li:hover ul li a {
+  background: none;
+  color: #fff;
+}
+#main_menu ul ul li ul li a:hover {
+  background: #333333;
+  color: #fff;
 }
