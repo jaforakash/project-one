@@ -17,6 +17,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+.aligenleft {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.aligenright {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.aligencenter {
+  display: block;
+  margin: 0 auto 15px;
+}
 
 /*==================================
 Top Header CSS
@@ -245,5 +259,80 @@ Main Menu CSS
 }
 #main_menu ul ul li ul li a:hover {
   background: #333333;
+  color: #fff;
+}
+
+/*==================================
+Slider CSS
+===================================*/
+
+#slider_area {
+  margin-top: 20px;
+}
+.item {
+  position: relative;
+}
+.slider_caption {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 15%;
+}
+.slider_caption h1 {
+  color: #3f3f40;
+  font-size: 50px;
+  font-family: cursive;
+}
+
+/*==================================
+Hero Area CSS
+===================================*/
+#hero_area {
+  background: #fff;
+  height: 450px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.inner_hero {
+  overflow: hidden;
+}
+#hero_image {
+  height: 440px;
+  width: 330px;
+  float: left;
+  padding: 10px 20px 0 0;
+  display: inline-block;
+}
+#hero_summery {
+  height: 440px;
+  width: 600px;
+  padding: 10px 10px 0 0;
+  float: right;
+}
+.inner_hero h1 {
+  color: #000;
+  font-size: 50px;
+  line-height: 1em;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+.inner_hero h4 {
+  color: #333333;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.inner_hero ul {
+  color: #3f3f40;
+  padding-left: 18px;
+}
+#hero_more {
+  background-color: #666666;
+  width: 100px;
+  padding: 5px;
+  border-radius: 20px;
+}
+.inner_hero a {
+  text-decoration: none;
   color: #fff;
 }
