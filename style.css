@@ -122,7 +122,7 @@ Main Header CSS
   clear: both;
 }
 .inner_header {
-  padding: 40px 0;
+  padding: 15px 0 10px 0;
   overflow: hidden;
 }
 .logo_area {
@@ -130,7 +130,7 @@ Main Header CSS
   width: 240px;
 }
 .social_area {
-  padding-top: 15px;
+  padding-top: 35px;
   float: right;
   max-width: 600px;
   width: 100%;
@@ -326,13 +326,253 @@ Hero Area CSS
   color: #3f3f40;
   padding-left: 18px;
 }
-#hero_more {
+.hero_more p {
   background-color: #666666;
-  width: 100px;
-  padding: 5px;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  padding: 5px 0;
   border-radius: 20px;
 }
-.inner_hero a {
+.hero_more p a {
   text-decoration: none;
   color: #fff;
+}
+
+.inner_hero a:hover {
+  color: #000;
+}
+
+/*==================================
+Work CSS
+===================================*/
+#work_area {
+  background: #f2f2f2;
+  padding: 45px 0;
+}
+.inner_work {
+  overflow: hidden;
+}
+.child_work {
+  width: 32%;
+  float: left;
+  margin: 0 1% 10px;
+}
+.child_work h2 {
+  color: #333333;
+  font-size: 26px;
+  font-weight: normal;
+}
+.child_work p {
+  color: #878787;
+  font-size: 14px;
+  font-weight: normal;
+}
+.child_work a {
+  color: #b92d1f;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  clear: both;
+  float: right;
+  display: inline-block;
+}
+.child_work a:hover {
+  color: #0000ff;
+}
+.about_area {
+  margin-left: 0;
+}
+.about_area img {
+  border: 1px solid #dfdfdf;
+  padding: 5px;
+  display: block;
+  margin-bottom: 15px;
+}
+.service_area {
+}
+.child_service {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.child_service .service_image {
+  width: 25%;
+  float: left;
+}
+.child_service .service_text {
+  width: 75%;
+  float: right;
+}
+.child_service .service_text h3 {
+  font-size: 15px;
+  margin: 0 auto 4px;
+}
+.child_service .service_text p {
+  margin-top: 0;
+  line-height: 1.4em;
+}
+.testimonial_area {
+  margin-right: 0;
+}
+.child_testimonial {
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.child_testimonial h3 {
+  background-image: url(img/comment.png);
+  background-repeat: no-repeat;
+  color: #989898;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 0 15px 65px;
+  margin: 0;
+}
+.child_testimonial p {
+  margin: 0;
+}
+.child_testimonial h3 span {
+  font-weight: normal;
+}
+
+/*==================================
+Footer CSS
+===================================*/
+#footer_area {
+  background: #fff;
+  padding: 45px 0;
+}
+.inner_footer {
+  overflow: hidden;
+}
+.child_footer {
+  padding: 1%;
+  margin: 0 1% 10px;
+  width: 21%;
+  float: left;
+}
+.child_footer h3 {
+  border-top: 1px solid #666666;
+  color: #666666;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 15px;
+}
+.child_footer h4 {
+  color: #666666;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.child_footer h4 a {
+  color: #666666;
+  float: none;
+  text-decoration: none;
+}
+.child_footer h4 a:hover {
+  color: #b92d1f;
+}
+.child_footer h6 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  line-height: 1.3em;
+}
+.child_footer p {
+  color: #666666;
+  font-size: 14px;
+  margin-top: 0;
+}
+.child_footer p a {
+  color: #b92d1f;
+  text-decoration: none;
+}
+.child_blog {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.child_blog a {
+  color: #b92d1f;
+  float: right;
+  text-decoration: none;
+  font-size: 14px;
+}
+.child_blog a:hover {
+  color: #0000ff;
+}
+.child_footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.child_footer ul ul {
+  display: none;
+}
+.child_footer li {
+  background: url(img/png.png) no-repeat center left;
+  display: block;
+  border-bottom: 1px solid #666666;
+  padding-left: 17px;
+  padding-bottom: 7px;
+}
+.child_footer li a {
+  color: #666666;
+  font-size: 14px;
+  text-decoration: none;
+}
+.child_footer li a:hover {
+  color: #b92d1f;
+}
+.child_footer input {
+  background: #f2f2f2;
+  border: 0px solid;
+  border-radius: 10px;
+  padding: 10px 5%;
+  margin-bottom: 10px;
+  width: 90%;
+}
+.child_footer textarea {
+  background: #f2f2f2;
+  border: 0px solid;
+  border-radius: 10px;
+  padding: 10px 5%;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 80px;
+}
+.child_footer input[type="submit"] {
+  width: 80px;
+  color: #b92d1f;
+  cursor: pointer;
+}
+.child_footer input[type="submit"]:hover {
+  background: #b92d1f;
+  color: #f2f2f2;
+}
+
+/*==================================
+Copyright CSS
+===================================*/
+#copyright_area {
+  background: #f2f2f2;
+  padding: 20px 0;
+}
+.inner_copyright {
+  overflow: hidden;
+}
+.inner_copyright p {
+  margin: 0;
+  color: #919191;
+  font-size: 12px;
+}
+.left_copyright {
+  float: left;
+  width: 60%;
+}
+.right_copyright {
+  float: right;
+  text-align: right;
+  width: 40%;
 }
